@@ -1,0 +1,12 @@
+ion-toolbar {
+    --background: var(--ion-color-favprimary-dark);
+    --color: var(--ion-color-favprimary-pale-tint);
+}
+
+ion-toolbar ion-button ion-icon{
+    color: var(--ion-color-favprimary-pale);
+}
+
+ion-content ion-item div {
+    color: red;
+}

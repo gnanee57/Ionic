@@ -1,0 +1,12 @@
+ion-toolbar {
+    --background: var(--ion-color-favprimary-dark);
+    --color: var(--ion-color-favprimary-pale-tint);
+}
+
+ion-toolbar ion-menu-button{
+    --color: var(--ion-color-favprimary-pale);
+}
+
+ion-card-title{
+    font-size: 20px;
+}

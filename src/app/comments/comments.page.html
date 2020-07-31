@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="end" fill="clear" (click)="dismiss()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+    <ion-title>Comment Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form novalidate [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input formControlName="author" type="text" required></ion-input>
+      <div *ngIf="formErrors.author">{{formErrors.author}}</div>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Rating</ion-label>
+      <ion-range formControlName="rating" min="1" max="5" step="1" snaps pin color="secondary">
+        <ion-icon slot="start" size="small" name="thumbs-up"></ion-icon>
+        <ion-icon slot="end" name="thumbs-up"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Your Comment</ion-label>
+      <ion-textarea formControlName="comment" rows="12" required></ion-textarea>
+      <div *ngIf="formErrors.comment">{{formErrors.comment}}</div>
+    </ion-item>
+    <ion-button type="submit" [disabled]="!commentForm.valid">Submit</ion-button>
+  </form>
+</ion-content>

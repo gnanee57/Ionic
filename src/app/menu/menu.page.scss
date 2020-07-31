@@ -1,0 +1,30 @@
+ion-toolbar {
+    --background: var(--ion-color-favprimary-dark);
+    --color: var(--ion-color-favprimary-pale-tint);
+}
+
+ion-toolbar ion-menu-button{
+    --color: var(--ion-color-favprimary-pale);
+}
+
+ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }

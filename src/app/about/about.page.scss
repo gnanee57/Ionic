@@ -1,0 +1,40 @@
+ion-toolbar {
+    --background: var(--ion-color-favprimary-dark);
+    --color: var(--ion-color-favprimary-pale-tint);
+}
+
+ion-toolbar ion-menu-button{
+    --color: var(--ion-color-favprimary-pale);
+}
+
+ion-card-header{
+    --color: var(--ion-color-favprimary-dark);
+    font-size: large;
+}
+
+ion-card-content p{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+ion-list ion-item ion-label h4{
+    font-size: 15px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+ion-list ion-item ion-label div{
+    font-size: small;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+ion-list ion-item ion-label p{
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(26, 24, 24);
+}
+
